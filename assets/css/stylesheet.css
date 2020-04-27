@@ -1,0 +1,550 @@
+/*#region reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*#endregion*/
+
+.hero-page {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/e33ca030-6fe7-4d95-aafd-fe4e4d1b00c8/GB-en-20200302-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 110vh;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+}
+
+.main-content {
+  position: relative;
+  margin-left: 0vw;
+  width: 100vw;
+}
+
+#logo {
+  width: 12vw;
+  min-width: 100px;
+  height: 10vh;
+  margin-left: 4vw;
+  margin-top: 3vh;
+  position: absolute;
+  display: inline-block;
+}
+
+#sign-in-button {
+  color: white;
+  background-color: #e50914;
+  padding: 7.5px 16px;
+  font-weight: 500;
+  border: 1px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  position: absolute;
+  width: 6.5vw;
+  height: 6vh;
+  display: block;
+  margin-left: 88vw;
+  margin-top: 5vh;
+  font-size: 2.5vh;
+  line-height: 3.5vh;
+}
+
+#sign-in-button:hover {
+  cursor: pointer;
+}
+
+#unlimited-films {
+  margin-top: 15vh;
+  margin-left: 27vw;
+  color: white;
+  text-align: center;
+  font-size: 8.5vh;
+  width: 45vw;
+}
+
+#watch-anywhere {
+  margin-top: 2vh;
+  margin-left: 32.5vw;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+  font-size: 4.5vh;
+}
+
+.input {
+  display: flex;
+}
+
+.email-input {
+  position: relative;
+  width: 35vw;
+  height: 10vh;
+  margin-left: 22.5vw;
+  margin-top: 5.5vh;
+}
+
+.email {
+  background-color: white;
+  width: 35vw;
+  height: 10vh;
+  border: 0.5px solid #e50914;
+}
+
+.email-label {
+  position: absolute;
+  color: grey;
+  margin-left: 0.7vw;
+  font-size: 2.8vh;
+  bottom: 3vh;
+}
+
+/*.email-input:hover > .email-label {
+  color: red;
+}*/
+
+.try-button {
+  color: white;
+  background-color: #e50914;
+  margin-left: 57.75vw;
+  margin-top: 5.5vh;
+  width: 18.5vw;
+  height: 10.5vh;
+  text-align: center;
+  line-height: 8vh;
+  padding-top: 12vw 20vh;
+  border-radius: 2px;
+  border: 9px solid #e50914;
+  font-size: 4.5vh;
+  position: absolute;
+}
+
+.try-button:hover {
+  cursor: pointer;
+  background-color: #ed0202;
+  border-color: #ed0202;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+#ready {
+  color: white;
+  text-align: center;
+  font-size: 3.5vh;
+  margin-top: 3vh;
+  font-weight: 200;
+}
+
+.gray-bar {
+  width: 100vw;
+  height: 1vh;
+  background-color: gray;
+}
+
+.enjoy-container {
+  position: relative;
+  display: flex;
+  background-color: black;
+  height: 80vh;
+  width: 100vw;
+}
+
+#enjoy-h1 {
+  color: white;
+  margin-top: 24vh;
+  margin-left: 6vw;
+  font-size: 8.5vh;
+}
+
+#enjoy-h2 {
+  color: white;
+  margin-top: 4.5vh;
+  margin-left: 6vw;
+  font-size: 4.5vh;
+  width: 43vw;
+  font-weight: 200;
+  letter-spacing: 0.1vw;
+}
+
+.enjoy-video {
+  position: relative;
+}
+
+.enjoy-video img {
+  position: absolute;
+  width: 40vw;
+  margin-left: 4.25vw;
+  z-index: 2;
+}
+
+.enjoy-video video {
+  position: absolute;
+  width: 30vw;
+  margin-left: 9vw;
+  margin-top: 13vh;
+}
+
+.download-container {
+  position: relative;
+  display: flex;
+  background-color: black;
+  height: 80vh;
+  width: 100vw;
+}
+
+.download-images {
+  position: relative;
+}
+
+#woman {
+  position: absolute;
+  height: 70vh;
+  width: 40vw;
+}
+
+.front-container {
+  position: relative;
+  background-color: black;
+  width: 25vw;
+  height: 15vh;
+  margin-top: 46.5vh;
+  margin-left: 7.5vw;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+
+#stranger-things {
+  position: absolute;
+  height: 12vh;
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+}
+
+#stranger-things-h1 {
+  position: absolute;
+  color: white;
+  font-size: 2.5vh;
+  margin-left: 6vw;
+  margin-top: 4.5vh;
+}
+
+#stranger-things-h2 {
+  position: absolute;
+  color: #0071eb;
+  font-size: 2.5vh;
+  margin-left: 6vw;
+  margin-top: 7.5vh;
+}
+
+#stranger-things-gif {
+  position: absolute;
+  height: 10vh;
+  margin-left: 20vw;
+  margin-top: 2vh;
+}
+
+#download-h1 {
+  position: absolute;
+  color: white;
+  width: 40vw;
+  margin-top: 16vh;
+  margin-left: 17vw;
+  font-size: 8vh;
+}
+
+#download-h2 {
+  position: absolute;
+  color: white;
+  margin-top: 48vh;
+  margin-left: 17vw;
+  width: 40vw;
+  font-weight: 200;
+}
+
+.watch-container {
+  position: relative;
+  display: flex;
+  background-color: black;
+  height: 90vh;
+  width: 100vw;
+}
+
+#watch-h1 {
+  color: white;
+  font-size: 8.5vh;
+  margin-left: 6.5vw;
+  margin-top: 31vh;
+}
+
+#watch-h2 {
+  color: white;
+  font-size: 4.5vh;
+  width: 40vw;
+  margin-top: 3vh;
+  margin-left: 6.5vw;
+  font-weight: 200;
+}
+
+.watch-video {
+  position: relative;
+}
+
+.watch-video img {
+  position: absolute;
+  width: 43vw;
+  margin-left: 6.5vw;
+  margin-top: 7vh;
+  z-index: 1;
+}
+
+.watch-video video {
+  position: absolute;
+  width: 27vw;
+  margin-left: 14vw;
+  margin-top: 14vh;
+}
+
+.black {
+  background-color: black;
+  height: 10vh;
+}
+
+.faq-container {
+  position: relative;
+  background: black;
+  height: 140vh;
+  width: 100vw;
+}
+
+#faq-h1 {
+  position: absolute;
+  color: white;
+  font-size: 8.5vh;
+  margin-left: 23.5vw;
+  margin-top: 12.5vh;
+}
+
+.dropdown-container {
+  position: absolute;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 63.5vw;
+  height: 12.5vh;
+  background-color: #303030;
+  color: white;
+}
+
+#what-is-netflix-background {
+  margin-top: 32vh;
+  margin-left: 17.5vw;
+}
+
+#what-is-netflix-text {
+  margin-left: 2.5vw;
+  margin-top: 3.5vh;
+  font-size: 5vh;
+  font-weight: 200;
+}
+
+.dropdown-content-1 {
+  display: none;
+  position: absolute;
+  background-color: #303030;
+  height: 65vh;
+  z-index: 1;
+  border: 0.5px solid black;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  #sign-in-button {
+    margin-left: 80vw;
+    width: 12vw;
+    padding: 0px 5px;
+    font-size: 3.2vh;
+    line-height: 6vh;
+    margin-top: 6vh;
+    min-width: 70px;
+  }
+
+  #unlimited-films {
+    font-size: 6.5vh;
+    margin-left: 3vw;
+    width: 90vw;
+    margin-top: 8.2vh;
+  }
+
+  #watch-anywhere {
+    font-size: 4vh;
+    margin-top: 4.5vh;
+    margin-left: 19vw;
+  }
+
+  .email-input {
+    width: 85vw;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    height: 11vh;
+  }
+
+  .email {
+    width: 85vw;
+    margin-left: 0vw;
+    height: 11vh;
+  }
+
+  .email-label {
+    margin-left: 2vw;
+    bottom: 3vh;
+    font-size: 3vh;
+  }
+
+  .try-button {
+    margin-top: 15vh;
+    margin-left: 34vw;
+    font-size: 4vh;
+    width: 30vw;
+  }
+
+  .flex {
+    flex-direction: column-reverse;
+  }
+
+  #ready {
+    width: 70vw;
+    margin-left: 15vw;
+    font-size: 4vh;
+  }
+
+  .enjoy-container {
+    flex-direction: column;
+    height: 110vh;
+  }
+
+  #enjoy-h1 {
+    font-size: 6vh;
+    margin-left: 26vw;
+    margin-top: 10vh;
+  }
+
+  #enjoy-h2 {
+    margin-left: 6vw;
+    width: 87vw;
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .enjoy-video img {
+    margin-left: 5vw;
+    width: 85vw;
+    top: 0vh;
+  }
+
+  .enjoy-video video {
+    margin-left: 15vw;
+    width: 65vw;
+  }
+
+  .download-container {
+    height: 110vh;
+    margin-left: 0;
+  }
+
+  #woman {
+    width: 86vw;
+    margin-left: 5vw;
+    margin-top: 30vh;
+    height: 70vh;
+  }
+
+  #download-h1 {
+    margin-top: 10vh;
+    left: -8vw;
+    width: 80vw;
+    font-size: 6vh;
+    text-align: center;
+  }
+
+  #download-h2 {
+    width: 90vw;
+    margin-left: -65vw;
+    margin-top: 30vh;
+    font-size: 4vh;
+  }
+
+  .front-container {
+    width: 56vw;
+    margin-top: 82vh;
+    margin-left: 19vw;
+  }
+
+  #stranger-things {
+    margin-left: 2vw;
+  }
+
+  #stranger-things-h1 {
+    margin-top: 4vh;
+    margin-left: 12vw;
+    width: 30vw;
+    font-size: 3vh;
+  }
+
+  #stranger-things-h2 {
+    margin-left: 12vw;
+    margin-top: 8vh;
+    font-size: 2.5vh;
+  }
+
+  #stranger-things-gif {
+    margin-left: 45vw;
+  }
+
+  .watch-container {
+    height: 120vh;
+  }
+
+  #watch-h1 {
+    font-size: 6vh;
+    margin-top: 12vh;
+    margin-left: 25vw;
+  }
+
+  #watch-h2 {
+    width: 85vw;
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .watch-video img {
+    margin-top: 31vh;
+    width: 87vw;
+    margin-left: -86.5vw;
+  }
+
+  .watch-video video {
+    margin-top: 38vh;
+    width: 55vw;
+    margin-left: -70vw;
+  }
+}
